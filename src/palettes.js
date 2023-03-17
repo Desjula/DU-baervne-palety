@@ -1,4 +1,4 @@
-export const palettes = [
+const palettes = [
   {
     name: 'Mimosa Retreat',
     image: '/img/mimosa-retreat.jpg',
@@ -44,3 +44,5 @@ export const palettes = [
     description: 'A nightly and mysterious combination of shades of blue, which includes pale blue, green-blue, midnight blue, personifies the word “mystery”. But this riddle is permeated with a cold that penetrates deep into your mind, preventing you from getting too close to understanding what this palette is fraught with and why it sinks into your head so much.',
   },
 ];
+
+export default palettes;

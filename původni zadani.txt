@@ -1,18 +1,12 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import './style.css';
-import palettes from "./palettes.js"
-import Palette from './components/Palette';
-
 const App = () => {
-  
   return (
     <div className="container">
       <header>
         <h1>Barevné palety</h1>
       </header>
-
-      {palettes.map((paleta) => <Palette paletteData={paleta} key={paleta.name}/>)}
+      {prvniBarvy.map((color) => <SchemeColor color={color} key={color} />)}
+      <hr />
+      {druheBarvy.map((color) => <SchemeColor color={color} key={color} />)}
 
       <main>
         <div className="palette">
@@ -59,7 +53,3 @@ const App = () => {
     </div>
   );
 };
-
-createRoot(
-  document.querySelector('#app'),
-).render(<App />);

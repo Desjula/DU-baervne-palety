@@ -1,0 +1,20 @@
+.palette-scheme--horizontal > .scheme-colors {
+  flex-direction: row;
+}
+
+.palette-scheme--vertical > .scheme-colors {
+  flex-direction: column;
+}
+
+.scheme-color {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scheme-colors {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
